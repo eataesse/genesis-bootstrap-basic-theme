@@ -1,0 +1,417 @@
+/*
+Theme Name: Genesis Basic
+Theme URI: http://www.wpbeaches.com
+Description: A basic child theme of the Genesis framework. Bootstrap 3 is used for the layout.
+Author: Richard de Jong
+Version: 0.1
+Template: genesis
+Tags: the child of genesis
+*/
+/*@import url('../genesis/style.css');*/
+
+
+html {
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+body {
+    background-color: #F9F9F9;
+    padding-top: 100px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+}
+ 
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+ 
+/* Text meant only for screen readers */
+.assistive-text {
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+ 
+ 
+/* =Content
+----------------------------------------------- */
+
+.content-block,
+.content-area {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 40px;
+}
+ 
+.sticky {
+}
+.hentry {
+    margin: 0 0 1.5em;
+}
+.entry-meta {
+    clear: both;
+}
+.byline {
+    display: none;
+}
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+ 
+/* =Asides
+----------------------------------------------- */
+ 
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+ 
+/* =Media
+----------------------------------------------- */
+ 
+.site-header img,
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+.site-header img,
+.entry-content img,
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.site-header img,
+.entry-content img,
+img.size-full {
+    max-width: 100%;
+    width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+.wp-caption {
+    border: 1px solid #ccc;
+    max-width: 100%;
+}
+.wp-caption.aligncenter,
+.wp-caption.alignleft,
+.wp-caption.alignright {
+    margin-bottom: 1.5em;
+}
+.wp-caption img {
+    display: block;
+    margin: 1.2% auto 0;
+    max-width: 98%;
+}
+.wp-caption-text {
+    text-align: center;
+}
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+.site-content .gallery {
+    margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-content .gallery a img {
+    border: none;
+    height: auto;
+    max-width: 90%;
+}
+.site-content .gallery dd {
+    margin: 0;
+}
+.site-content .gallery-columns-4 .gallery-item {
+}
+.site-content .gallery-columns-4 .gallery-item img {
+}
+ 
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+ 
+/* =Navigation
+----------------------------------------------- */
+ 
+.site-content .site-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+.site-content .nav-previous {
+    float: left;
+    width: 50%;
+}
+.site-content .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+ 
+/* =Comments
+----------------------------------------------- */
+ 
+.bypostauthor {
+}
+ 
+/* =Widgets
+----------------------------------------------- */
+ 
+.widget {
+    xmargin: 0 0 1.5em;
+}
+ 
+/* Search widget */
+#searchsubmit {
+    display: none;
+}
+
+
+.site-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-widgets {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-widgets div[id^='footer-'] {
+    padding: 50px 0 30px;
+}
+
+
+.site-main {
+    display: block;
+    float: left;
+}
+
+.site-inner {
+    padding-bottom: 20px;
+}
+
+
+.navbar-default {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-brand {
+    padding: 30px 15px;
+}
+
+.navbar-toggle {
+    margin: 0 !important;
+    padding: 31px 31px;
+    border-radius: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    margin: 4px auto 0;
+}
+
+
+.navbar-header {
+    xwidth: 100%;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+}
+
+.navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-header .widget-area {
+    float: right;
+}
+
+/* Bootstrap Fixed Top Navbar + WP Admin Bar */
+body.admin-bar .navbar {
+    top: 32px;
+}
+
+
+div[class^='footer-widgets-'] {
+    padding: 20px;
+}
+
+.home-top {
+    margin-top: -20px;
+}
+
+.home div[class^='home-'] .textwidget p {
+    margin-bottom: 0;
+}
+
+.home .home-widget-area:nth-of-type(even) {
+    background-color: #fff;
+}
+.home .home-widget-area:nth-of-type(odd) {
+    background-color: #eee;
+}
+.home .home-widget-area {
+    padding: 70px 0;
+}
+.home .home-top.home-widget-area {
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255,255,255,.5);
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .dropdown-menu>li>a:focus, 
+.navbar-dark .navbar-nav.dropdown-menu>li>a:hover {
+	color: rgba(255,255,255,.75);
+    background-color: rgba(255,255,255,0);
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link:focus,
+.navbar-dark .navbar-nav .active>.nav-link:hover,
+.navbar-dark .navbar-nav .open>.nav-link,
+.navbar-dark .navbar-nav .open>.nav-link:focus,
+.navbar-dark .navbar-nav .open>.nav-link:hover,
+.navbar-dark .navbar-toggle:focus, 
+.navbar-dark .navbar-toggle:hover {
+	color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,.25);
+}
+.navbar-dark .navbar-brand, 
+.navbar-dark .navbar-brand:focus, 
+.navbar-dark .navbar-brand:hover {
+    color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .navbar-toggle .icon-bar {
+    background-color: rgba(255,255,255,.5);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,.5);
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .dropdown-menu>li>a:focus, 
+.navbar-light .navbar-nav.dropdown-menu>li>a:hover {
+    background-color: rgba(255,255,255,0);
+	color: rgba(0,0,0,.75);
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link:focus,
+.navbar-light .navbar-nav .active>.nav-link:hover,
+.navbar-light .navbar-nav .open>.nav-link,
+.navbar-light .navbar-nav .open>.nav-link:focus,
+.navbar-light .navbar-nav .open>.nav-link:hover,
+.navbar-light .navbar-toggle:focus, 
+.navbar-light .navbar-toggle:hover {
+	color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.1);
+}
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:hover {
+    color: rgba(0,0,0,.75);
+}
+
+.navbar-light .navbar-toggle .icon-bar {
+    background-color: rgba(0,0,0,.5);
+}
+
+@media (min-width: 768px) {
+    .navbar-brand,
+    .navbar-nav>li>a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.bg-primary {
+    background-color: #0682FF;
+    border-color: #0682FF;
+}
+.bg-primary .dropdown-menu {
+    background-color: inherit;
+}
+
+.navbar>.wrap,
+.navbar>.wrap>.container-fluid,
+.navbar>.wrap>.container-fluid>.navbar-collapse,
+.navbar>.wrap>.container-fluid>.navbar-collapse>.navbar-nav,
+.navbar>.wrap>.container-fluid>.navbar-collapse>.navbar-nav>li {
+    background-color: inherit;
+}
+
+
+.menu-secondary-menu-container ul.menu li {
+    list-style-type: none;
+}
+
+
+
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-info {
+    border-left-color: #1b809e;
+}
+.bs-callout-info h4 {
+    color: #1b809e;
+}
+
+.bs-callout-danger {
+    border-left-color: #ce4844;
+}
+
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}

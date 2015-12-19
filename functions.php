@@ -67,16 +67,13 @@ function child_theme_setup() {
     include_once( CHILD_DIR . '/lib/gb/bootstrap-markup.php' );
     include_once( CHILD_DIR . '/lib/gb/bootstrap-markup-layout-options.php' );
     include_once( CHILD_DIR . '/lib/gb/bootstrap-walker.php' );
+    include_once( CHILD_DIR . '/lib/gb/bootstrap-navbar-logo-customizer.php' );
     include_once( CHILD_DIR . '/lib/gb/sidebar-secondary-move-inside-content-sidebar-wrap.php' );
     include_once( CHILD_DIR . '/lib/gb/footer-back-to-top.php' );
     //include_once( CHILD_DIR . '/lib/mdl/menu.php' );
     //include_once( CHILD_DIR . '/lib/mdl/pagination.php' );
     //include_once( CHILD_DIR . '/lib/mdl/post.php' );
     //include_once( CHILD_DIR . '/lib/mdl/search.php' );
-    
-    //include_once( get_stylesheet_directory() . '/inc/template-tags.php' );
-    //include_once( get_stylesheet_directory() . '/inc/tweaks.php' );
-    ///include_once( get_stylesheet_directory() . '/inc/custom-header.php' );
     
     require_once( CHILD_DIR . '/lib/class-tgm-plugin-activation.php' );
     include_once( CHILD_DIR . '/lib/gb/tgmpa.php' );

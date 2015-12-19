@@ -18,7 +18,6 @@ add_theme_support( 'html5' );
  **/
 add_theme_support( 'genesis-structural-wraps', array(
 	'header',
-	'nav',
 	'subnav',
 	'inner',
 	'footer-widgets',
@@ -55,6 +54,12 @@ add_theme_support( 'genesis-accessibility', array(
     //'rems' 
 ) );
 
+/** 
+ *
+ * Add support for custom header 
+ *
+ **/
+add_theme_support( 'genesis-custom-header', array( 'width' => 116, 'height' => 116 ) );
 
 /** 
  * 

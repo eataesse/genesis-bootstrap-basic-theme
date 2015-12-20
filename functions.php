@@ -87,5 +87,4 @@ function gb_theme_setup(){
     load_theme_textdomain( 'genesisbasic', get_template_directory() . '/languages' );
 }
 
-
-?>    
+?>

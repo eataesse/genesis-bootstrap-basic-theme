@@ -96,6 +96,11 @@ function my_theme_register_required_plugins() {
         ),
         
         array(
+            'name'          => 'Genesis Favicon Uploader',
+            'slug'          => 'genesis-favicon-uploader',
+        ),
+        
+        array(
             'name'          => 'Genesis Translations',
             'slug'          => 'genesis-translations',
         ),
@@ -113,6 +118,16 @@ function my_theme_register_required_plugins() {
         array(
             'name'          => 'Black Studio TinyMCE Widget',
             'slug'          => 'black-studio-tinymce-widget',
+        ),
+        
+        array(
+            'name'          => 'Social Media Feather',
+            'slug'          => 'social-media-feather',
+        ),
+        
+        array(
+            'name'          => 'Coming Soon Page & Maintenance Mode by SeedProd',
+            'slug'          => 'coming-soon',
         ),
 
 	);

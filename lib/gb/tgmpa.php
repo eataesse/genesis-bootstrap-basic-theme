@@ -75,14 +75,28 @@ function my_theme_register_required_plugins() {
 		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
 		// recognize the plugin as being installed.
 		array(
-			'name'        => 'WordPress SEO by Yoast',
-			'slug'        => 'wordpress-seo',
-			'is_callable' => 'wpseo_init',
-		),
+            'name'          => 'Share Buttons by AddThis',
+            'slug'          => 'addthis',
+        ),
+        
+        array(
+            'name'          => 'Black Studio TinyMCE Widget',
+            'slug'          => 'black-studio-tinymce-widget',
+        ),
+        
+        array(
+            'name'          => 'Coming Soon Page & Maintenance Mode by SeedProd',
+            'slug'          => 'coming-soon',
+        ),
         
         array(
             'name'          => 'Contact Form 7',
             'slug'          => 'contact-form-7',
+        ),
+        
+        array(
+            'name'          => 'Display Widgets',
+            'slug'          => 'display-widgets',
         ),
         
         array(
@@ -106,18 +120,8 @@ function my_theme_register_required_plugins() {
         ),
         
         array(
-            'name'          => 'Display Widgets',
-            'slug'          => 'display-widgets',
-        ),
-        
-        array(
-            'name'          => 'TinyMCE Advanced',
-            'slug'          => 'tinymce-advanced',
-        ),
-        
-        array(
-            'name'          => 'Black Studio TinyMCE Widget',
-            'slug'          => 'black-studio-tinymce-widget',
+            'name'          => 'Post Types Order',
+            'slug'          => 'post-types-order',
         ),
         
         array(
@@ -126,8 +130,19 @@ function my_theme_register_required_plugins() {
         ),
         
         array(
-            'name'          => 'Coming Soon Page & Maintenance Mode by SeedProd',
-            'slug'          => 'coming-soon',
+            'name'          => 'TinyMCE Advanced',
+            'slug'          => 'tinymce-advanced',
+        ),
+        
+        array(
+			'name'           => 'Yoast SEO',
+			'slug'           => 'wordpress-seo',
+			'is_callable'    => 'wpseo_init',
+		),
+        
+        array(
+            'name'          => 'WP-SpamShield Anti-Spam',
+            'slug'          => 'wp-spamshield',
         ),
 
 	);

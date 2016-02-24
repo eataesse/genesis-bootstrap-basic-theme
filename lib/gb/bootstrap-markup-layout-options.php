@@ -23,23 +23,23 @@ function gb_layout_options_modify_classes_to_add( $classes_to_add ) {
     
     // content-sidebar-sidebar
      if ( 'content-sidebar-sidebar' === $layout ) {
-    	$classes_to_add['content'] .= ' col-sm-6';
+    	$classes_to_add['content'] .= ' col-sm-7';
     	$classes_to_add['sidebar-primary'] .= ' col-sm-3';
-    	$classes_to_add['sidebar-secondary'] .= ' col-sm-3';
+    	$classes_to_add['sidebar-secondary'] .= ' col-sm-2';
     }
     
     // sidebar-sidebar-content  // not yet supported
      if ( 'sidebar-sidebar-content' === $layout ) {
-    	$classes_to_add['content'] .= ' col-sm-6 col-sm-push-6';
-    	$classes_to_add['sidebar-primary'] .= ' col-sm-3 col-sm-pull-3';
-    	$classes_to_add['sidebar-secondary'] .= ' col-sm-3 col-sm-pull-9';
+    	$classes_to_add['content'] .= ' col-sm-7 col-sm-push-5';
+    	$classes_to_add['sidebar-primary'] .= ' col-sm-3 col-sm-pull-5';
+    	$classes_to_add['sidebar-secondary'] .= ' col-sm-2 col-sm-pull-10';
     }
     
     // sidebar-content-sidebar
      if ( 'sidebar-content-sidebar' === $layout ) {
-    	$classes_to_add['content'] .= ' col-sm-6 col-sm-push-3';
-    	$classes_to_add['sidebar-primary'] .= ' col-sm-3 col-sm-push-3';
-    	$classes_to_add['sidebar-secondary'] .= ' col-sm-3 col-sm-pull-9';
+    	$classes_to_add['content'] .= ' col-sm-7 col-sm-push-2';
+    	$classes_to_add['sidebar-primary'] .= ' col-sm-3 col-sm-push-2';
+    	$classes_to_add['sidebar-secondary'] .= ' col-sm-2 col-sm-pull-10';
     }
     
     // full-width-content       // supported

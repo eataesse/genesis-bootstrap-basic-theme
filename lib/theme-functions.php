@@ -115,7 +115,7 @@ function mb_add_post_type_caps() {
 }
 
 /**
- * Add a class to every table in the content
+ * Bootstrap - Add a class to every table in the content
  */
 function add_custom_table_class( $content ) {
     return str_replace( '<table>', '<table class="table">', $content );
@@ -123,7 +123,7 @@ function add_custom_table_class( $content ) {
 add_filter( 'the_content', 'add_custom_table_class' );
 
 /**
- * Wrap every table in a div to make it responsive
+ * Bootstrap - Wrap every table in a div to make it responsive
  */
 function wrap_table_div($content) {
   return preg_replace_callback('~<table.*?</table>~is', function($match) {

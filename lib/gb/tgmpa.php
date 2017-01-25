@@ -149,6 +149,11 @@ function my_theme_register_required_plugins() {
             'name'          => 'Flamingo',
             'slug'          => 'flamingo',
         ),
+        
+        array(
+            'name'          => 'Bootstrap for Contact Form 7',
+            'slug'          => 'bootstrap-for-contact-form-7',
+        ),
 
 	);
 

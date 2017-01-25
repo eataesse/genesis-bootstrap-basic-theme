@@ -144,6 +144,11 @@ function my_theme_register_required_plugins() {
             'name'          => 'WP-SpamShield Anti-Spam',
             'slug'          => 'wp-spamshield',
         ),
+        
+        array(
+            'name'          => 'Flamingo',
+            'slug'          => 'flamingo',
+        ),
 
 	);
 

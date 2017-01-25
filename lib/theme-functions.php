@@ -114,6 +114,24 @@ function mb_add_post_type_caps() {
 	// mb_add_capabilities( 'portfolio' );
 }
 
+/**
+ * Add a class to every table in the content
+ */
+function add_custom_table_class( $content ) {
+    return str_replace( '<table>', '<table class="table">', $content );
+}
+add_filter( 'the_content', 'add_custom_table_class' );
+
+/**
+ * Wrap every table in a div to make it responsive
+ */
+function wrap_table_div($content) {
+  return preg_replace_callback('~<table.*?</table>~is', function($match) {
+    return '<div class="table-responsive">' . $match[0] . '</div>';
+  }, $content);
+}
+add_filter('the_content', 'wrap_table_div');
+
 
 /****************************************
 Misc Theme Functions
